@@ -1,0 +1,10 @@
+{
+  "name": "verc",
+  "version": "1.0.0",
+  "private": true,
+  "keywords": [],
+  "type": "module",
+  "dependencies": {
+    "grammy": "^1.45.1"
+  }
+}
