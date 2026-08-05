@@ -13,7 +13,7 @@ bot.command("start", async (ctx) => {
 });
 
 bot.on("message:text", async (ctx) => {
-  await ctx.reply(`{ctx.message.text`)
+  await ctx.reply(`{ctx.message.text}`)
 })
 
 export default webhookCallback(bot, "https");
