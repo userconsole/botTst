@@ -1,12 +1,5 @@
-export default function handler(res, req) {
-  res.setHeader('Access-Control-Allow-Origin', '*')
-  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
-  if (req.method === "OPTIONS") {
-    return res.status(200).end();
-  }
+export default function handler(res) {
 
-
-  if (req.method === 'GET') {
     return res.status(200).json({
       status: 'success',
       data: [
@@ -17,5 +10,3 @@ export default function handler(res, req) {
       ]
     })
   }
-  return res.status(405).json({error: 'Че за методы ???'})
-}
